@@ -13,13 +13,7 @@
     .services-container{
         min-width: auto;
     }
-    .services-carousel{
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .services-list button{
-        display: inline;
-    }
+
 }
 @media screen and (max-width: 528px) {
     .nav-links{
@@ -39,11 +33,20 @@
     .nav-links li{
         display: inline;
     }
-    .services-list{
-        display: flex;
-        flex-direction: column;
-    }
     .footer-social-media img{
         width: 30px;
     }
+}
+@media screen and (max-width: 450px) {
+    
+    .presentation-text{
+        font-size: 1.3em;
+    }
+    .services-container{
+        padding: 0px;
+    }
+    .contact-us-container{
+       min-width: auto;
+    }
+
 }

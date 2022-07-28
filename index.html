@@ -24,10 +24,10 @@
             <label for="nav-menu" id="nav-menu-btn"><img src="media/menu.svg" alt="menu"></label>
 
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a>Home</a></li>
+                <li><a onclick="servicesFunction()">Serviços</a></li>
+                <li><a onclick="contactUsFunction()">Contato</a></li>
+                <li><a onclick="aboutFunction()">Sobre</a></li>
             </ul>
             
         </div>
@@ -39,50 +39,95 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
 
         <div class="services-container">
 
             <h2 class="services-title">NOSSOS SERVIÇOS</h2>
 
-            <div class="services-carousel">
-                <div class="services-list">
-                    <button onclick="slide_1()">Web Development</a>
-                    <button onclick="slide_2()">Identidades Visuais</a>
+            <div class="services-card-stack">
+
+                <div class="service-card">
+                    <img src="media/services/gestao-de-midias-sociais.svg" alt="Gestão de midias sociais">
+                    <h3>Gestão de Mídias Sociais</h3>
+                    <p>Criação de conteúdos e ações de divulgação do negócio, fazendo isso de modo segmentado para atingir o público alvo desejado.</p>
                 </div>
-                <div class="services-carousel-container">
-                    <div class="service-card-stack" id="slides">
-                        <div class="service-card">
-                            <h3>Web Development</h3>
-                            <p>Leve sua marca para o mundo digital e tenha seu próprio WebSite com a NextStep!</p>
-                        </div>
-                        <div class="service-card">
-                            <h3>Identidades Visuais</h3>
-                            <p>A identidade visual é um conjunto de elementos visuais que tornará sua ideia atraente para seu público. Venha "vestir" sua empresa com a NextStep!</p>
-                        </div>
+                
+                <div class="service-card">
+                    <img src="media/services/websites.svg" alt="WebSites">
+                    <h3>Websites</h3>
+                    <p>Leve sua marca para o mundo digital e tenha seu próprio Website com a Next Step!</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="media/services/identidades-visuais.svg" alt="Identidades Visuais">
+                    <h3>Identidades Visuais</h3>
+                    <p>A identidade visual é um conjunto de elementos visuais que tornará sua ideia atraente para seu público. Venha "vestir" sua empresa com a Next Step!</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="media/services/sistemas-web.svg" alt="">
+                    <h3>Sistemas Web</h3>
+                    <p>Se deseja ter um sistema personalizado, de acordo com as necessidades da sua empresa e acessível de qualquer lugar, a Next Step ajuda você!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="differences">
+        <div class="differences-container">
+            <h2>POR QUE A NEXT STEP?</h2>
+            <div class="differences-card-stack">
+                <div class="differences-card">
+                    <img src="media/differences/preco.svg" alt="">
+                    <div class="differences-card-text">
+                        <h3>Preço Abaixo do Mercado</h3>
+                        <p>Somos uma empresa sem fins lucrativos, portanto nossos preços são inferiores aos valores convencionais do mercado!</p>
+                    </div>
+                </div>
+                <div class="differences-card">
+                    <img src="media/differences/design.svg" alt="Design">
+                    <div class="differences-card-text">
+                        <h3>Design Moderno</h3>
+                        <p>Nossos sites contam com um design moderno e inovador, desenvolvidos sob medida para atender suas necessidades.</p>
+                    </div>
+                </div>
+                <div class="differences-card">
+                    <img src="media/differences/tecnologias.svg" alt="Novas Tecnologias">
+                    <div class="differences-card-text">
+                        <h3>Novas Tecnologias</h3>
+                        <p>O uso estratégico de novas tecnologias é empregado para disponibilizar aos nossos clientes uma experiência única.</p>
+                    </div>
+                </div>
+                <div class="differences-card">
+                    <img src="media/differences/Equipe-qualificada.svg" alt="Equipe Qualificada">
+                    <div class="differences-card-text">
+                        <h3>Equipe Qualificada</h3>
+                        <p>Quando o assunto é qualidade, prezamos na eficiência operacional do desenvolvimento de nossos projetos, colocando a satisfação do cliente como meta da prestação de nossos serviços.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact-us">
+    <section class="contact-us" id="contact-us">
         <div class="contact-us-container">
             <div class="contact-us-text">
                 <h2>Bora fechar?</h2>
                 <p>E aí? Precisa da ajudinha de um especialista? Nos envie seu email que nós entramos em contato!!</p>
-                <form action="#">
+                <form action="">
                     <input type="email" placeholder="exemplo@email.com" id="contact-us-emailbox" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     <button type="submit" id="contact-us-btn">Enviar</button>
                 </form>
             </div>
-            <img src="../Site/media/contact-us.jpg" alt="Um Laptop" class="contact-us-img">
+            <img src="media/contact-us.jpg" alt="Um Laptop" class="contact-us-img">
         </div>
     </section>
 
     <footer>
         <div class="footer-container">
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about-text">
                     <h2>Sobre a NextStep</h2>
                     <p>A NextStep é uma empresa júnior (sem fins lucrativos) do curso de Sistemas de Informação da Universidade Federal dos Vales do Jequitinhonha e Mucuri.
@@ -91,9 +136,9 @@
             </section>
             <div class="footer-social-media">
                 <h3>Redes Sociais</h3>
-                <a href="https://www.instagram.com/nextstep.ej/" target="_blank"><img src="../Site/media/instagram.png" alt=""></a>
-                <a href="https://www.facebook.com/nextstepsi" target="_blank"><img src="../Site/media/facebook.png" alt=""></a>
-                <a href="https://www.linkedin.com/company/nextstepsi/" target="_blank"><img src="../Site/media/linkedin.png" alt=""></a>
+                <a href="https://www.instagram.com/nextstep.ej/" target="_blank"><img src="media/instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/nextstepsi" target="_blank"><img src="media/facebook.png" alt=""></a>
+                <a href="https://www.linkedin.com/company/nextstepsi/" target="_blank"><img src="media/linkedin.png" alt=""></a>
             </div>
             <div class="footer-location">
                 <h3>Localização</h3>

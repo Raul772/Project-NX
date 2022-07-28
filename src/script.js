@@ -1,21 +1,16 @@
-const slides = document.getElementById("slides");
-const slide = document.querySelectorAll("#slides div");
 
-let id = 0;
+const services = document.getElementById("services");
+const contactUs = document.getElementById("contact-us");
+const about = document.getElementById("about");
 
-function slide_1(){ id = 0; slideshow();}
-function slide_2(){ id = 1; slideshow();}
-
-function slideshow(){
-    
-    if(id > slide.length - 1) id = 0;
-
-    slides.style.transform = `translateY(${(-id * 150)}px)`;
-
-    id++;
-
+function servicesFunction(){
+    services.scrollIntoView();
 }
-
-setInterval(slideshow, 10000);
+function contactUsFunction(){
+    contactUs.scrollIntoView();
+}
+function aboutFunction(){
+    about.scrollIntoView();
+}
 
 
