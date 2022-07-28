@@ -13,7 +13,6 @@
     .services-container{
         min-width: auto;
     }
-
 }
 @media screen and (max-width: 528px) {
     .nav-links{
