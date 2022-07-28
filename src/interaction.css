@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.nav-links li:hover{
+    background-color: var(--color-highlight-green);
+    transition: all .3s;
+}
+.services-list button:hover{
+    background: var(--color-highlight-green);
+    transition: all .3s;
+}
+#contact-us-btn:hover{
+    background: var(--color-highlight-green);
+    transition: all .3s;
+}
+
+

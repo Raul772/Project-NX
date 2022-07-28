@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1100px) {
+    .contact-us-img{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) { 
+    .presentation-container{
+        max-width: 100%;
+        justify-content: center;
+    }
+    .services-container{
+        min-width: auto;
+    }
+    .services-carousel{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .services-list button{
+        display: inline;
+    }
+}
+@media screen and (max-width: 528px) {
+    .nav-links{
+        display: none;
+    }
+    #nav-menu-btn{
+        display: flex;
+        justify-content: center;
+    }
+    #nav-menu:checked ~.nav-links{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 52px;
+        width: 100%;
+    }
+    .nav-links li{
+        display: inline;
+    }
+    .services-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-social-media img{
+        width: 30px;
+    }
+}
